@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Manrope:wght@600&family=Montserrat&family=Noto+Sans+Shavian&family=Nunito&family=Roboto:wght@100&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --color-uno: #1B1E28;
+    --color-dos: #414550;
+    --color-tres: #0D6FFD;
+    --color-cuatro: #FFFFFF;
+}
+
+html,body{
+    height: 100vh;
+    background-color: var(--color-uno);
+}
+
+.lf__headerTag{
+    display: flex;
+    width: 100%;
+    color: var(--color-cuatro);
+}
+
+.lf__headerTag .headerTag-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em 1em 2em 1em;
+}
+
+.lf__headerTag .headerTag-header .btn-container{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    height: 100%;
+}
+
+.lf__headerTag .headerTag-header .btn-container .btn-container-element{
+    display: flex;
+    align-items: center;
+}
+
+.lf__headerTag .headerTag-header .btn-container .btn-container-element svg{
+    height: 1.5em;
+}
+
+/*MAIN TAG*/
+
+.lf__mainTag{
+    /* min-height: 10em;
+    max-height: 60vh; */
+    height: 80vh;
+    background-color: var(--color-cuatro);
+    border-radius: 5em 5em 1em 1em;
+    padding: 3em 1em 0 1em;
+    position: relative;
+    color: var(--color-uno);
+}
+.lf__mainTag .mainTag-aux{
+    right: 0;
+    left: 0;
+    margin: -.6em 2.7em 0 2.7em;
+    border-radius: 100%;
+    background-color: var(--color-cuatro);
+    height: 3em;
+    position: absolute;
+    top: 0;
+}
+.lf__mainTag .mainTag-header{
+    min-height: 1em;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3em;
+}
+
+.lf__mainTag .mainTag-header .containerOfCarrousel{
+    display: flex;
+    gap: 2em;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: 0 0 0 0;
+    padding: 0 0 1em 0;
+}
+
+.containerOfCarrousel .elementOfCarrousel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+.containerOfCarrousel .elementOfCarrousel img{
+    height: 12em;
+    width: 12em;
+    object-fit: content;
+}
+.containerOfCarrousel .elementOfCarrousel h6{
+    font-size: 1.2em;
+}
+
+.containerOfCarrousel .elementOfCarrousel h5{
+    color: var(--color-tres);
+    font-weight: bolder;
+}
+.containerOfCarrousel .elementOfCarrousel button{
+    margin: .7em 0 0 0;
+    color: var(--color-cuatro);
+    background-color: var(--color-tres);
+    border: none;
+    border-radius: .1em;
+    padding: .3em;
+    font-weight: bolder;
+}
